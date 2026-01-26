@@ -24,8 +24,8 @@ Located in: `Analysis/Scripts/SQL/02_merge/`
 ### 3. Analysis (SQL & R)
 * **SQL Analysis:** `Analysis/Scripts/SQL/03_statistical_analysis/`
     * Calculates key metrics: Average ride length, member vs. casual usage by day of week, and monthly trends.
-* **R Verification:** `Analysis/Scripts/R/cyclistic_workflow.R`
-    * Performs validation checks and advanced statistical summary on the processed data.
+* **R Workflow:** `Analysis/Scripts/R/cyclistic_workflow.R`
+    * Besides process procedures, performs validation checks and advanced statistical summary on the processed data.
 
 ## 📊 Final Reports
 

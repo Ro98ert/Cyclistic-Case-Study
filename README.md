@@ -7,8 +7,8 @@
 
 ## 📂 Repository Structure
 
-**Methodology:** This project utilizes a **dual-pipeline approach**. The full data extraction, cleaning, and analysis process was executed first in **SQL**, and then replicated in **R**. This redundancy was used to verify results and demonstrate versatility in both environments.
-**Tools:** SQL (Data Cleaning & Analysis), R (Statistical Analysis), Tableau (Visualization)
+* **Methodology:** This project utilizes a **dual-pipeline approach**. The full data extraction, cleaning, and analysis process was executed first in **SQL**, and then replicated in **R**. This redundancy was used to verify results and demonstrate versatility in both environments.
+* **Tools:** SQL (Data Cleaning & Analysis), R (Statistical Analysis), Tableau (Visualization)
 
 This project follows a structured data pipeline:
 

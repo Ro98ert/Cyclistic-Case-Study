@@ -63,4 +63,4 @@ These recommendations directly follow from the observed behavioral differences b
 
 SQL for aggregation and filtering.  
 R and spreadsheets for data cleaning, transformation, and summary statistics.  
-Tableau or R visualizations for charts and comparisons.
+R visualizations for charts and comparisons.

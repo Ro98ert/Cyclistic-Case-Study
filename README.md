@@ -1,49 +1,73 @@
 # Cyclistic Bike-Share Analysis
 
 ## Project Summary
-This project analyzes historical Cyclistic bike-share trip data to examine how casual riders and annual members use the service differently. The objective is to identify behavioral patterns that can support marketing strategies aimed at increasing annual memberships.
+This project analyzes historical Cyclistic bike-share trip data to compare how casual riders and annual members use the service. The goal is to identify behavioral patterns that could help inform marketing strategies aimed at increasing annual memberships.
 
 ## Business Question
-How do casual riders and annual members differ in their bike-share usage, and what patterns could help inform member conversion strategies?
+How do casual riders and annual members differ in their bike-share usage, and what patterns could support member conversion strategies?
 
 ## Tools Used
 - **SQL** — data cleaning, transformation, and analysis
-- **R** — workflow validation and statistical summaries
+- **R** — analysis support, validation, and summary work
 - **R Markdown** — reporting and project presentation
 
-## Project Workflow
-This project uses a dual workflow in **SQL** and **R**. The main cleaning and analysis process was completed in SQL, then reproduced in R to validate the approach and demonstrate the same analytical logic across two environments.
+## Workflow
+This project uses a dual workflow in **SQL** and **R**. The main cleaning and analysis process was completed in SQL, then reproduced in R to confirm the approach and demonstrate the same analytical logic across two environments.
 
-### 1. Data Cleaning
-**Location:** [SQL cleaning scripts](./Analysis/Scripts/SQL/01_cleaning)
+## Repository Contents
 
-- Standardized raw trip data from 2019 and 2020
-- Cleaned column names and formats
-- Removed incomplete or inconsistent records
+### 1. SQL Cleaning
+**Location:** [`Analysis/Scripts/SQL/01_cleaning/`](./Analysis/Scripts/SQL/01_cleaning/)
 
-### 2. Data Merging
-**Location:** [SQL merge script](./Analysis/Scripts/SQL/02_merge/merge_cleaned_tables.sql)
+This folder contains the quarterly cleaning scripts used to standardize the raw trip data:
+- [`clean_2019_q1.sql`](./Analysis/Scripts/SQL/01_cleaning/clean_2019_q1.sql)
+- [`clean_2019_q2.sql`](./Analysis/Scripts/SQL/01_cleaning/clean_2019_q2.sql)
+- [`clean_2019_q3.sql`](./Analysis/Scripts/SQL/01_cleaning/clean_2019_q3.sql)
+- [`clean_2019_q4.sql`](./Analysis/Scripts/SQL/01_cleaning/clean_2019_q4.sql)
+- [`clean_2020_q1.sql`](./Analysis/Scripts/SQL/01_cleaning/clean_2020_q1.sql)
 
-- Combined cleaned quarterly tables into a single dataset for analysis
+Main tasks:
+- standardized column names and formats
+- cleaned inconsistent or incomplete records
+- prepared each quarter for merging
 
-### 3. Analysis
-**SQL:** [Statistical analysis scripts](./Analysis/Scripts/SQL/03_statistical_analysis)  
-**R:** [R workflow script](./Analysis/Scripts/R/cyclistic_workflow.R)
+### 2. SQL Merge
+**Location:** [`Analysis/Scripts/SQL/02_merge/merge_cleaned_tables.sql`](./Analysis/Scripts/SQL/02_merge/merge_cleaned_tables.sql)
+
+This script combines the cleaned quarterly datasets into a single table for analysis.
+
+### 3. SQL Analysis
+**Location:** [`Analysis/Scripts/SQL/03_statistical_analysis/`](./Analysis/Scripts/SQL/03_statistical_analysis/)
+
+This folder contains SQL queries used to analyze rider behavior:
+- [`avg_ride_length.sql`](./Analysis/Scripts/SQL/03_statistical_analysis/avg_ride_length.sql)
+- [`monthly_rides.sql`](./Analysis/Scripts/SQL/03_statistical_analysis/monthly_rides.sql)
+- [`time_of_day.sql`](./Analysis/Scripts/SQL/03_statistical_analysis/time_of_day.sql)
+- [`trips_per_member_type.sql`](./Analysis/Scripts/SQL/03_statistical_analysis/trips_per_member_type.sql)
 
 The analysis focuses on:
 - ride duration
-- rider-type differences
-- weekday and weekend usage
-- monthly and seasonal trends
+- member versus casual usage
+- time-of-day behavior
+- monthly ride trends
 
-## Key Insights
-- Casual riders tend to take longer rides than annual members.
-- Casual rider usage is higher on weekends and during warmer months.
-- Members show more consistent weekday usage, suggesting more routine travel behavior.
+### 4. R Workflow
+**Location:** [`Analysis/Scripts/R/cyclistic_workflow.R`](./Analysis/Scripts/R/cyclistic_workflow.R)
+
+This script supports the analysis by reproducing the workflow in R and summarizing key patterns.
+
+## Key Findings
+- Casual riders generally take longer rides than annual members.
+- Casual rider activity is higher on weekends and during warmer periods.
+- Members use the service more consistently on weekdays.
+- Usage patterns suggest different purposes for each rider type.
 
 ## Reports
-- **Executive Summary (PDF):** [View PDF Report](./Reports/Cyclistic_Analysis_Markdown.pdf)
-- **Technical Report (Markdown):** [View Markdown Report](./Reports/Cyclistic_Markdown.md)
+- **Executive Summary (PDF):** [`Reports/Cyclistic_Analysis_Markdown.pdf`](./Reports/Cyclistic_Analysis_Markdown.pdf)
+- **Technical Report (Markdown):** [`Reports/Cyclistic_Markdown.md`](./Reports/Cyclistic_Markdown.md)
 
 ## Data Source
-The raw datasets are not included in this repository due to file size constraints. The SQL scripts assume the source data has already been loaded into a database.
+The analysis uses publicly available Cyclistic (Divvy) trip data. Raw source files are not included in this repository due to size constraints. The SQL scripts assume the original data has already been loaded into a database environment.
+
+## Limitations
+This analysis is based on trip history data only. It does not include demographic information or direct evidence of rider motivation, so interpretations about commuting or leisure behavior should be treated as informed usage patterns rather than confirmed intent.

@@ -1,66 +1,67 @@
-# Cyclistic bike-share analysis  
-Google data analytics capstone project
+# Cyclistic Bike-Share Analysis
+Google Data Analytics Capstone Project
 
-## 1. Business task
+## Project Overview
+This project examines behavioral differences between casual riders and annual members using Cyclistic bike-share trip data. The objective is to support marketing decisions focused on converting casual riders into members.
 
-Determine how annual members and casual riders use Cyclistic bikes differently. The purpose is to support the marketing team in designing strategies that encourage casual riders to convert into annual members.
+## 1. Business Task
+Analyze how annual members and casual riders use Cyclistic bikes differently in order to identify patterns that could support membership growth strategies.
 
-## 2. Data source
+## 2. Data Source
+The analysis uses 12 months of publicly available trip data from the Cyclistic (Divvy) bike-share system.
 
-The analysis uses 12 months of public trip data from the Cyclistic (Divvy) bike-share system.  
-Each file contains ride IDs, timestamps, station names, bike types, and rider types.  
-Personal identifiers have been removed to protect privacy.  
-The data is appropriate because it directly records how each user type interacts with the system.
+The dataset includes:
+- ride IDs
+- ride start and end times
+- station names
+- bike types
+- rider types
 
-## 3. Data cleaning and preparation
+Personal identifiers were removed in the original source data, making it suitable for behavioral analysis.
 
-Tools used: SQL and R.
+## 3. Data Cleaning and Preparation
+**Tools used:** SQL and R
 
-Main steps:
-- Imported 12 CSV files and standardized column names.
-- Converted start and end times to proper datetime formats.
-- Calculated ride length as the difference between end and start time.
-- Extracted the day of the week from the start timestamp.
-- Removed rides with negative or unrealistic durations.
-- Removed records with missing timestamps or rider types.
-- Merged all monthly files into a single dataset.
-- Verified consistency in column types across all data.
+Main preparation steps:
+- imported and standardized 12 monthly files
+- aligned column names and data types
+- converted timestamps to datetime format
+- calculated ride length
+- extracted day-of-week values
+- removed records with missing key fields
+- filtered out negative or unrealistic ride durations
+- merged monthly files into a single dataset for analysis
 
-The cleaned dataset was then used for exploration and analysis.
+## 4. Analysis Approach
+The analysis compares casual riders and annual members across:
+- ride duration
+- weekday versus weekend activity
+- monthly and seasonal patterns
+- overall ride volume
 
-## 4. Analysis
+This approach helps identify both behavioral differences and broader usage trends across the year.
 
-### Descriptive Findings
-- Casual riders consistently take longer rides than annual members.
-- Casual rider activity peaks on weekends.
-- Annual members use the system more often on weekdays, especially during commuting hours.
-- Casual rider usage increases significantly in warmer months.
-- Annual members show more consistent usage across the whole year.
+## 5. Key Findings
+- Casual riders generally take longer rides than annual members.
+- Casual rider activity is higher on weekends.
+- Members ride more consistently on weekdays, suggesting stronger commuting behavior.
+- Casual rider activity increases during warmer months.
+- Members show more stable usage throughout the year.
 
-### Observed patterns
-- Members appear to use the system primarily for transportation and commuting.
-- Casual riders appear to use the system mainly for leisure and tourism.
-- Ride length is a strong differentiator between the two groups.
-- Weekday vs. weekend behavior is distinct and consistent across months.
+## 6. Interpretation
+The results suggest that the two rider groups use the bike-share service differently.
 
-## 5. Key findings
+- **Members** appear more likely to use bikes for routine transportation and weekday travel.
+- **Casual riders** appear more likely to use bikes for leisure, seasonal outings, or non-routine trips.
 
-1. Casual riders take longer rides than members, indicating more leisure-focused usage.  
-2. Members ride more often during weekdays, matching commuting patterns.  
-3. Casual riders show peak activity on weekends and in summer months.  
-4. Annual members complete more total rides despite shorter durations.  
-5. Seasonal trends strongly influence casual rider behavior.
+These differences are visible in ride duration, weekly usage patterns, and seasonal behavior.
 
-## 6. Recommendations
+## 7. Recommendations
+1. Increase membership promotion during periods of high casual rider activity.
+2. Emphasize the practical value of membership for frequent riders, especially around convenience and cost.
+3. Test introductory offers or short-term trials for casual riders who show repeated usage.
 
-1. Promote annual memberships during the summer, when casual usage is highest.  
-2. Emphasize the benefits of membership for commuters, such as cost savings and reliability.  
-3. Offer introductory membership discounts or short-term trials aimed at high-frequency casual riders to build long-term habits.
-
-These recommendations directly follow from the observed behavioral differences between rider types.
-
-## 7. Tools used
-
-SQL for aggregation and filtering.  
-R and spreadsheets for data cleaning, transformation, and summary statistics.  
-R visualizations for charts and comparisons.
+## 8. Tools Used
+- **SQL** for cleaning, filtering, and aggregation
+- **R** for transformation, validation, and summary analysis
+- **Spreadsheets** for supporting review and inspection

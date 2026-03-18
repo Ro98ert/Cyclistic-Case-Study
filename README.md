@@ -71,3 +71,6 @@ The analysis uses publicly available Cyclistic (Divvy) trip data. Raw source fil
 
 ## Limitations
 This analysis is based on trip history data only. It does not include demographic information or direct evidence of rider motivation, so interpretations about commuting or leisure behavior should be treated as informed usage patterns rather than confirmed intent.
+
+## Notes
+AI tools were used selectively for brainstorming, editing, and improving documentation clarity. All analysis logic, SQL/R workflows, interpretation, and final conclusions were reviewed and validated by me.

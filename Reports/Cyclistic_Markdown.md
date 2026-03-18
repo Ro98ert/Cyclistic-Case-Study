@@ -1,11 +1,10 @@
 # Cyclistic Bike-Share Analysis
-Google Data Analytics Capstone Project
 
 ## Project Overview
 This project examines behavioral differences between casual riders and annual members using Cyclistic bike-share trip data. The objective is to support marketing decisions focused on converting casual riders into members.
 
 ## 1. Business Task
-Analyze how annual members and casual riders use Cyclistic bikes differently in order to identify patterns that could support membership growth strategies.
+Analyze how annual members and casual riders use Cyclistic bikes differently to identify patterns that could support membership growth strategies.
 
 ## 2. Data Source
 The analysis uses 12 months of publicly available trip data from the Cyclistic (Divvy) bike-share system.
@@ -39,7 +38,7 @@ The analysis compares casual riders and annual members across:
 - monthly and seasonal patterns
 - overall ride volume
 
-This approach helps identify both behavioral differences and broader usage trends across the year.
+This approach helps identify both behavioral differences and broader usage trends throughout the year.
 
 ## 5. Key Findings
 - Casual riders generally take longer rides than annual members.
@@ -54,14 +53,17 @@ The results suggest that the two rider groups use the bike-share service differe
 - **Members** appear more likely to use bikes for routine transportation and weekday travel.
 - **Casual riders** appear more likely to use bikes for leisure, seasonal outings, or non-routine trips.
 
-These differences are visible in ride duration, weekly usage patterns, and seasonal behavior.
+These differences are reflected in ride duration, weekly usage patterns, and seasonal behavior.
 
 ## 7. Recommendations
 1. Increase membership promotion during periods of high casual rider activity.
 2. Emphasize the practical value of membership for frequent riders, especially around convenience and cost.
 3. Test introductory offers or short-term trials for casual riders who show repeated usage.
 
-## 8. Tools Used
+## 8. Limitations
+This analysis is based on trip history data only. It does not include demographic information or direct evidence of rider motivation, so interpretations about commuting or leisure behavior should be treated as informed patterns rather than confirmed intent.
+
+## 9. Tools Used
 - **SQL** for cleaning, filtering, and aggregation
 - **R** for transformation, validation, and summary analysis
 - **Spreadsheets** for supporting review and inspection

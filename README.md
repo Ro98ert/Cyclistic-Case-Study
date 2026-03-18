@@ -67,6 +67,8 @@ This script supports the analysis by reproducing the workflow in R and summarizi
 - **Technical Report (Markdown):** [`Reports/Cyclistic_Markdown.md`](./Reports/Cyclistic_Markdown.md)
 
 ## Data Source
+- Dataset: [Cyclistic Bike-Share Data](https://divvy-tripdata.s3.amazonaws.com/index.html)
+
 The analysis uses publicly available Cyclistic (Divvy) trip data. Raw source files are not included in this repository due to size constraints. The SQL scripts assume the original data has already been loaded into a database environment.
 
 ## Limitations

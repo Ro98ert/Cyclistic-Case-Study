@@ -1,40 +1,44 @@
-# Cyclistic Bike-Share Analysis 🚴‍♀️
+# Cyclistic Bike-Share Analysis
 
-## Project Overview
-**Goal:** Design marketing strategies to convert casual riders into annual members by analyzing historical bike trip data.
-**Role:** Data Analyst
-**Tools:** SQL (Data Cleaning & Analysis), R (Statistical Analysis), Tableau (Visualization)
+## Project Summary
+This project analyzes historical Cyclistic bike-share trip data to understand how casual riders and annual members use the service differently. The goal is to generate insights that can support marketing strategies aimed at increasing annual memberships.
 
-## 📂 Repository Structure
+## Business Question
+How do casual riders and annual members differ in their bike-share usage, and what patterns could help inform member conversion strategies?
 
-* **Methodology:** This project utilizes a **dual-pipeline approach**. The full data extraction, cleaning, and analysis process was executed first in **SQL**, and then replicated in **R**. This redundancy was used to verify results and demonstrate versatility in both environments.
-* **Tools:** SQL (Data Cleaning & Analysis), R (Statistical Analysis), Tableau (Visualization)
+## Tools Used
+- **SQL** — data cleaning, transformation, and analysis
+- **R** — workflow validation and statistical summary
+- **R Markdown** — data visualization and reporting
 
-This project follows a structured data pipeline:
+## Project Workflow
+This project uses a dual workflow in **SQL** and **R**. The primary cleaning and analysis process was completed in SQL, then reproduced in R to validate the approach and demonstrate the same logic across two analytical environments.
 
-### 1. Data Cleaning (SQL)
-Located in: [Path](https://github.com/Ro98ert/Cyclistic-Case-Study/tree/e4ae571b8aef5a1e5099a5bd75cecb87d45f1056/Analysis/Scripts/SQL/01_cleaning)
-* Raw data from 2019/2020 was imported and standardized.
-* Scripts handle null value removal, column renaming, and consistent formatting across quarters.
+### 1. Data Cleaning
+**Location:** [Path](https://github.com/Ro98ert/Cyclistic-Case-Study/tree/10b469c02c310c6bcea0ae902ea914d7bc5f83ab/Analysis/Scripts/SQL/01_cleaning)
 
-### 2. Data Merging (SQL)
-Located in: [Path](https://github.com/Ro98ert/Cyclistic-Case-Study/tree/e4ae571b8aef5a1e5099a5bd75cecb87d45f1056/Analysis/Scripts/SQL/02_merge)
-* **`merge_cleaned_tables.sql`**: Combines the cleaned quarterly tables into a single master dataset for analysis.
+- Standardized raw trip data from 2019 and 2020
+- Cleaned column names and formats
+- Removed incomplete or inconsistent records
 
-### 3. Analysis (SQL & R)
-* **SQL Analysis:** [Path](https://github.com/Ro98ert/Cyclistic-Case-Study/tree/e4ae571b8aef5a1e5099a5bd75cecb87d45f1056/Analysis/Scripts/SQL/03_statistical_analysis)
-    * Calculates key metrics: Average ride length, member vs. casual usage by day of week, and monthly trends.
-* **R Workflow:** [Path](https://github.com/Ro98ert/Cyclistic-Case-Study/blob/e4ae571b8aef5a1e5099a5bd75cecb87d45f1056/Analysis/Scripts/R/cyclistic_workflow.R)
-    * Besides process procedures, performs validation checks and advanced statistical summary on the processed data.
+### 2. Data Merging
+**Location:** [Path](https://github.com/Ro98ert/Cyclistic-Case-Study/blob/10b469c02c310c6bcea0ae902ea914d7bc5f83ab/Analysis/Scripts/SQL/02_merge/merge_cleaned_tables.sql)
 
-## 📊 Final Reports
+- Combined cleaned quarterly tables into a single dataset for analysis
 
-The complete findings, visualizations, and business recommendations are available here:
+### 3. Analysis
+**SQL:** [Path](https://github.com/Ro98ert/Cyclistic-Case-Study/tree/10b469c02c310c6bcea0ae902ea914d7bc5f83ab/Analysis/Scripts/SQL/03_statistical_analysis)  
+**R:** [Path](https://github.com/Ro98ert/Cyclistic-Case-Study/blob/10b469c02c310c6bcea0ae902ea914d7bc5f83ab/Analysis/Scripts/R/cyclistic_workflow.R)
 
-* 📄 **Executive Summary (PDF):** [View PDF Report](./Reports/Cyclistic_Analysis_Markdown.pdf)
-* 📝 **Technical Report (Markdown):** [View Markdown Report](./Reports/Cyclistic_Markdown.md)
+The analysis focuses on:
+- ride duration
+- rider-type differences
+- weekday and weekend usage
+- monthly and seasonal trends
 
----
+## Reports
+- **Executive Summary (PDF):** [View PDF Report](./Reports/Cyclistic_Analysis_Markdown.pdf)
+- **Technical Report (Markdown):** [View Markdown Report](./Reports/Cyclistic_Markdown.md)
 
-### Data Source
-*Note: The raw datasets used for this analysis are not included in this repository due to size constraints. The logic provided in the `Scripts` folder assumes the raw data is loaded into a SQL database.*
+## Data Source
+The raw datasets are not included in this repository due to file size constraints. The SQL scripts assume the source data has already been loaded into a database.

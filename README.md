@@ -7,9 +7,9 @@ This project analyzes historical Cyclistic bike-share trip data to compare how c
 How do casual riders and annual members differ in their bike-share usage, and what patterns could support member conversion strategies?
 
 ## Tools Used
-- **SQL** — data cleaning, transformation, and analysis
-- **R** — analysis support, validation, and summary work
-- **R Markdown** — reporting and project presentation
+- **SQL:** data cleaning, transformation, and analysis
+- **R:** analysis support, validation, and summary work
+- **R Markdown:** reporting and project presentation
 
 ## Workflow
 This project uses a dual workflow in **SQL** and **R**. The main cleaning and analysis process was completed in SQL, then reproduced in R to confirm the approach and demonstrate the same analytical logic across two environments.
@@ -63,11 +63,12 @@ This script supports the analysis by reproducing the workflow in R and summarizi
 - Usage patterns suggest different purposes for each rider type.
 
 ## Reports
-- **Executive Summary (PDF):** [`Reports/Cyclistic_Analysis_Markdown.pdf`](./Reports/Cyclistic_Analysis_Markdown.pdf)
-- **Technical Report (Markdown):** [`Reports/Cyclistic_Markdown.md`](./Reports/Cyclistic_Markdown.md)
+- **Technical Report (PDF):** [`Reports/Cyclistic_Analysis_Markdown.pdf`](./Reports/Cyclistic_Analysis_Markdown.pdf)
+- **Executive Summary (Markdown):** [`Reports/Cyclistic_Markdown.md`](./Reports/Cyclistic_Markdown.md)
 
 ## Data Source
 - Dataset: [Cyclistic Bike-Share Data](https://divvy-tripdata.s3.amazonaws.com/index.html)
+- Period covered: 2019 Q1 through 2020 Q1 (15 months of trip data)
 
 The analysis uses publicly available Cyclistic (Divvy) trip data. Raw source files are not included in this repository due to size constraints. The SQL scripts assume the original data has already been loaded into a database environment.
 

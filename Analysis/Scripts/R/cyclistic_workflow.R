@@ -1,5 +1,5 @@
 #install necessary packages
-install.packages(c("tidyverse", "janitor"))
+install.packages(c("tidyverse", "janitor", "here"))
 
 # load essential packages
 library(tidyverse)
@@ -7,11 +7,12 @@ library(lubridate)
 library(janitor)
 library(dplyr)
 library(ggplot2)
+library(here)
 
 options(scipen = 999) # changing format for clean results
 
-# setting working directory where data is stored
-setwd("/cloud/project/Cyclistic_project/")
+# setting working directory where data is stored (portable across machines)
+setwd(here::here())
 
 #checking the path
 getwd()

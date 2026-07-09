@@ -63,7 +63,7 @@ This script supports the analysis by reproducing the workflow in R and summarizi
 - Usage patterns suggest different purposes for each rider type.
 
 ## Reports
-- **Technical Report (PDF):** [`Reports/Cyclistic_Analysis_Markdown.pdf`](./Reports/Cyclistic_Analysis_Markdown.pdf)
+- **Technical Report (PDF):** [Cyclistic Analysis Report v1.0](https://github.com/Ro98ert/Cyclistic-Case-Study/releases/download/v1.0-report/Cyclistic_Analysis_Markdown.pdf) (hosted as a GitHub Release asset to keep repo size small)
 - **Executive Summary (Markdown):** [`Reports/Cyclistic_Markdown.md`](./Reports/Cyclistic_Markdown.md)
 
 ## Data Source
